@@ -1,1 +1,178 @@
-<p>Hola Mundo</p>
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Académico</title>
+    <!-- Agregar tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-indigo-400">Andrés Juárez Garduño <span class="text-white">dev</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#tareas" class="hover:text-indigo-400 transition-colors">Tareas</a>
+                <a href="#ejercicios" class="hover:text-indigo-400 transition-colors">Ejercicios en Clase</a>
+                <a href="#certificaciones" class="hover:text-indigo-400 transition-colors">Certificaciones</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- perfil -->
+    <section class="py-20 border-b border-slate-800 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left md:flex md:items-center md:justify-between">
+            <div class="max-w-2xl">
+                <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 rounded-full border border-indigo-500/20">
+                    Andrés Juárez - Desarrollador
+                </span>
+                <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Mi Portafolio
+                </h1>
+                <p class="mt-4 text-lg text-slate-400 leading-relaxed">
+                    Bienvenido a mi portafolio. Aquí podrás encontrar mis tareas, ejercicios prácticos y certificaciones obtenidas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- tareas -->
+        <section id="tareas" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="p-2 bg-indigo-500/10 text-indigo-400 rounded-lg">
+                    <i data-lucide="file-text" class="w-10 h-10"></i>
+                </div>
+                <div>
+                    <h2 class="text-5xl font-bold text-white">Tareas</h2>
+                    <p class="text-xl text-slate-400">Tareas relizadas</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- tarjeta de tareas -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-slate-600 transition-all duration-200">
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">modulo prueba</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Tarea de prueba</h3>
+                        <p class="text-sm text-slate-400 mt-2">
+                            preuba prueba pureba prueba prueba asdasdfdsfsd
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-700/50 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">tipo de archivo</span>
+                        <a href="archivos/tareas/tarea1.pdf" target="_blank" class="inline-flex items-center space-x-1 text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                            <span>Ver Archivo</span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ejercicios -->
+        <section id="ejercicios" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg">
+                    <i data-lucide="code-2" class="w-10 h-10"></i>
+                </div>
+                <div>
+                    <h2 class="text-5xl font-bold text-white">Ejercicios en Clase</h2>
+                    <p class="text-xl text-slate-400">Ejercicios realizados</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- tarjeta ejercicios -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-slate-600 transition-all duration-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">prueba AWS</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Ejercicio de prueba</h3>
+                        <p class="text-sm text-slate-400 mt-2">
+                            Descripcion de prueba para los ejercicios en clase
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-700/50 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Código / Zip</span>
+                        <a href="archivos/ejercicios/ejercicio1.zip" download class="inline-flex items-center space-x-1 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                            <span>Descargar</span>
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- certificaciones -->
+        <section id="certificaciones" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="p-2 bg-amber-500/10 text-amber-400 rounded-lg">
+                    <i data-lucide="award" class="w-10 h-10"></i>
+                </div>
+                <div>
+                    <h2 class="text-6xl font-bold text-white">Certificaciones</h2>
+                    <p class="text-xl text-slate-400">Certificaciones obtenidas.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- taerjeta certificado -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-600 transition-all duration-200 group">
+                    <div>
+                        <!-- imagen -->
+                        <div class="relative h-48 w-full bg-slate-900 overflow-hidden border-b border-slate-700/50">
+                            <img 
+                                src="archivos/certificaciones/certificado1.jpg" 
+                                alt="Certificado Java Backend" 
+                                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                            >
+                            <div class="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+
+                        <!-- detalles del certificado -->
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Plataforma del certificado</span>
+                            <h3 class="text-lg font-bold text-white mt-1">Nombre del certificado</h3>
+                            <p class="text-sm text-slate-400 mt-2">
+                                Descripcion de prueba para certificados obtenidos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ver certificado -->
+                    <div class="p-6 pt-0 mt-auto">
+                        <div class="pt-4 border-t border-slate-700/50 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Imagen / PDF</span>
+                            <a href="archivos/certificaciones/certificado1.jpg" target="_blank" class="inline-flex items-center space-x-1 text-sm font-semibold text-amber-400 hover:text-amber-300">
+                                <span>Ver Certificación</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>&copy; Portafolio</p>
+    </footer>
+
+    <!-- íconos lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
