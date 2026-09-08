@@ -188,5 +188,6 @@ pip install notebook ipykernel
 6. Ejecutar la interfaz web de Jupyter Notebook:
 ```bash
 jupyter notebook
+jupyter notebook --no-browser --ip=0.0.0.0 --port=8888
 ```
 La consola mostrara un URL, puedes hacer clic derecho en el enlace para abrir la interfaz de Jupyter Notebook.
