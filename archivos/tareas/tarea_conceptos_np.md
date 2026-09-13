@@ -34,18 +34,18 @@ maximo = np.max(lista)
 El primer cuartil es la 1/4 parte de los datos ordenados y es el valor limite en el cual están por debajo el 25% de los datos.  
 Usando Numpy se calcularía de la siguiente manera:
 ``` Python
-q1 = np.percentil(lista,25)
+q1 = np.percentile(lista,25)
 ```
 ## 7. Q2 - Segundo cuartil (50%)
 El segundo cuartil coincide con la mediana. es el valor que esta justo a la mitad.  
 Usando Numpy se calcularía de la siguiente manera:
 ``` Python
-q2 = np.percentil(lista,50)
-mediana = np.mediana(lista)
+q2 = np.percentile(lista,50)
+mediana = np.median(lista)
 ```
 ## 8. Q3 - Tercer cuartil (75%)
 Muy parecido al primer cuartil pero ahora es 3/4 parte de los datos y el valor por el cual están por debajo el 75% de los datos.  
 Usando Numpy se calcularía de la siguiente manera:
 ``` Python
-q3 = np.percentil(lista,75)
+q3 = np.percentile(lista,75)
 ```
